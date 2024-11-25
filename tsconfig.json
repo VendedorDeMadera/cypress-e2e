@@ -22,12 +22,17 @@
       "es2018", 
       "dom"
     ],
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
+    "types": ["cypress"]  // Agregado para incluir los tipos de Cypress
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "include": [
+    "src/**/*.ts",  // Incluir código fuente
+    "cypress/**/*.ts"  // Incluir archivos de prueba de Cypress
+  ]
 }
